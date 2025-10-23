@@ -31,6 +31,8 @@ struct HorizontalListView: View {
                 }
             }
         }
+        .frame(height: 250)
+        .padding(10)
     }
 }
 
