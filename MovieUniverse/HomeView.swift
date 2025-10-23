@@ -15,7 +15,19 @@ struct HomeView: View {
             ScrollView {
                 LazyVStack {
                     AsyncImage(url: URL(string: heroTestTitle)) {
-                        image in image.resizable().scaledToFit()
+                        image in image
+                            .resizable()
+                            .scaledToFit()
+                            .overlay {
+                                LinearGradient(
+                                    stops:
+                                        [
+                                            Gradient.Stop(color: .clear, location: 0.8), Gradient.Stop(
+                                    color: .gradient, location: 1
+                                )],
+                                    startPoint: .top,
+                                    endPoint: .bottom)
+                            }
                     } placeholder: {
                         ProgressView()
                     }
