@@ -1,3 +1,4 @@
 {
-    "tmdbBaseURL": "https://api.themoviedb.org"
+    "tmdbBaseURL": "https://api.themoviedb.org",
+    "test": "test"
 }
