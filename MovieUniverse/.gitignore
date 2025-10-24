@@ -1,3 +1,17 @@
-Keys.xcconfig
+# Xcode build files
+build/
+DerivedData/
 
-APIConfig.json
+# Swift Package Manager
+.build/
+
+# User-specific files
+xcuserdata/
+
+# API keys or config
+Keys.xcconfig
+*.env
+
+# macOS metadata
+.DS_Store
+
